@@ -24,7 +24,7 @@ function renderLicenseLink(license) {
     return `https://opensource.org/licenses/MPL-2.0`;
   else if(license === 'Apache License 2.0')
     return `https://opensource.org/licenses/Apache-2.0`;
-  else 
+  else if(!license)
     return ``;
 }
 
@@ -35,7 +35,7 @@ function renderLicenseSection(license) {
     return `License: None`
   else {
     return `License: ${license}
-  ## [${license} Link](${renderLicenseLink(license)})`;
+    [${license} Link](${renderLicenseLink(license)})`;
   }
 }
 
@@ -55,26 +55,26 @@ function generateMarkdown(data) {
   ## [Tests](#tests)
   ## [Questions](#questions)
 
-  ## <a name = 'installation'/>
+  ## <a name = 'installation'>
   ## Installation
   ## ${data.installation}
 
-  ## <a name = 'usage'/>
+  ## <a name = 'usage'>
   ## Usage
   ## ${data.usage}
 
-  ## <a name = 'license'/>
+  ## <a name = 'license'>
   ## ${renderLicenseSection(data.licenses[0])}
 
-  ## <a name = 'contributing'/>
+  ## <a name = 'contributing'>
   ## How to Contribute
   ## ${data.contributing}
 
-  ## <a name = 'tests'/>
+  ## <a name = 'tests'>
   ## Tests
   ## ${data.test}
 
-  ## <a name = 'questions'/>
+  ## <a name = 'questions'>
   ## Questions
   ## Links below are to my GitHub profile and email.
   ## Feel free to contact me with any questions you may have about the application

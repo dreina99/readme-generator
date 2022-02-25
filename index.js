@@ -149,6 +149,14 @@ const promptUser = () => {
             name: 'licenses',
             message: questions[8],
             choices: ['MIT License', 'GNU GPLv3', 'Mozilla Public License 2.0', 'Apache License 2.0', 'None'],
+            validate: list => {
+                if(list.length)
+                    return true;
+                else {
+                    console.log("Please pick one of the values");
+                    return false;
+                }
+            }
         }
     ]);
 }
