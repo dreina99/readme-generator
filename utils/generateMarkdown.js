@@ -31,7 +31,9 @@ function renderLicenseLink(license) {
 // a function that returns the license section of README
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
-  return `## License: ${license}
+  if(license === 'None')
+    return `License: None`
+  return `License: ${license}
   ## [${license} Link](${renderLicenseLink(license)})`
 }
 
@@ -39,9 +41,14 @@ function renderLicenseSection(license) {
 function generateMarkdown(data) {
   console.log(data.licenses[0]);
   return `# ${data.projectName}
+  ## Description
   ## ${data.description}
   ## ${renderLicenseBadge(data.licenses[0])} 
 
+  ## Table of Contents
+  ## [Installation](#installation)
+
+  ## <a name = 'installation'/>
   ## Installation
   ## ${data.installation}
 
