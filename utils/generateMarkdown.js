@@ -33,8 +33,10 @@ function renderLicenseLink(license) {
 function renderLicenseSection(license) {
   if(license === 'None')
     return `License: None`
-  return `License: ${license}
-  ## [${license} Link](${renderLicenseLink(license)})`
+  else {
+    return `License: ${license}
+  ## [${license} Link](${renderLicenseLink(license)})`;
+  }
 }
 
 // a function to generate markdown for README
@@ -47,22 +49,32 @@ function generateMarkdown(data) {
 
   ## Table of Contents
   ## [Installation](#installation)
+  ## [Usage](#usage)
+  ## [License](#license)
+  ## [Contributing](#contributing)
+  ## [Tests](#tests)
+  ## [Questions](#questions)
 
   ## <a name = 'installation'/>
   ## Installation
   ## ${data.installation}
 
+  ## <a name = 'usage'/>
   ## Usage
   ## ${data.usage}
 
+  ## <a name = 'license'/>
+  ## ${renderLicenseSection(data.licenses[0])}
+
+  ## <a name = 'contributing'/>
   ## How to Contribute
   ## ${data.contributing}
 
+  ## <a name = 'tests'/>
   ## Tests
   ## ${data.test}
 
-  ## ${renderLicenseSection(data.licenses[0])}
-
+  ## <a name = 'questions'/>
   ## Questions
   ## Links below are to my GitHub profile and email.
   ## Feel free to contact me with any questions you may have about the application
