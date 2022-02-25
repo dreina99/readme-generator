@@ -35,8 +35,8 @@ function renderLicenseSection(license) {
     return `License: None`
   else {
     return `License: ${license}
-    [${license} Link](${renderLicenseLink(license)})`;
-  }
+    ## [${license} Link](${renderLicenseLink(license)})`;
+  } 
 }
 
 // a function to generate markdown for README
