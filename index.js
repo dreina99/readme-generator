@@ -11,7 +11,7 @@ const questions = ["What is your project title?",
                    "Provide instructions and examples for use. Include screenshots as needed.",
                    "How can others contribute to your project?",
                    "Enter your Github username.",
-                   "Enter your email.",
+                   "Enter your complete email with @ and '.com'.",
                    "Describe how to run tests for you application.",
                    "Choose your license below."
                 ];
@@ -148,7 +148,7 @@ const promptUser = () => {
             type: 'checkbox',
             name: 'licenses',
             message: questions[8],
-            choices: ['empty', 'empty', 'empty'],
+            choices: ['MIT License', 'GNU GLPv3', 'Mozilla Public License 2.0', 'Apache License 2.0', 'None'],
         }
     ]);
 }
