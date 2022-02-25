@@ -148,7 +148,7 @@ const promptUser = () => {
             type: 'checkbox',
             name: 'licenses',
             message: questions[8],
-            choices: ['MIT License', 'GNU GLPv3', 'Mozilla Public License 2.0', 'Apache License 2.0', 'None'],
+            choices: ['MIT License', 'GNU GPLv3', 'Mozilla Public License 2.0', 'Apache License 2.0', 'None'],
         }
     ]);
 }
