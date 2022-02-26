@@ -1,7 +1,7 @@
 # asfd
   ## Description
-  ## asdf
-  ## ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg) 
+  asfd
+  ![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg) 
 
   ## Table of Contents
   ## [Installation](#installation)
@@ -13,29 +13,29 @@
 
   ## <a name = 'installation'></a>
   ## Installation
-  ## asf
+  asfd
 
   ## <a name = 'usage'></a>
   ## Usage
-  ## asfasfd
+  asdf
 
   ## <a name = 'license'></a>
-  ## License: MIT License
-  ## [MIT License Link](https://opensource.org/licenses/MIT)
+  License: Mozilla Public License 2.0
+  ## [Mozilla Public License 2.0 Link](https://opensource.org/licenses/MPL-2.0)
 
   ## <a name = 'contributing'></a>
   ## How to Contribute
-  ## safd
+  asdf
 
   ## <a name = 'tests'></a>
   ## Tests
-  ## asfd
+  asdf
 
   ## <a name = 'questions'></a>
   ## Questions
-  ## Links below are to my GitHub profile and email.
-  ## Feel free to contact me with any questions you may have about the application
-  ## GitHub: [saf](https://www.github.com/saf)
-  ## Email: [sf](mailto:sf)
+  Links below are to my GitHub profile and email.
+  Feel free to contact me with any questions you may have about the application
+  GitHub: [asfd](https://www.github.com/asfd)
+  Email: [asdf](mailto:asdf)
 
 

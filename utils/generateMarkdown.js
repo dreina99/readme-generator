@@ -44,8 +44,8 @@ function generateMarkdown(data) {
   console.log(data.licenses[0]);
   return `# ${data.projectName}
   ## Description
-  ## ${data.description}
-  ## ${renderLicenseBadge(data.licenses[0])} 
+  ${data.description}
+  ${renderLicenseBadge(data.licenses[0])} 
 
   ## Table of Contents
   ## [Installation](#installation)
@@ -57,29 +57,29 @@ function generateMarkdown(data) {
 
   ## <a name = 'installation'></a>
   ## Installation
-  ## ${data.installation}
+  ${data.installation}
 
   ## <a name = 'usage'></a>
   ## Usage
-  ## ${data.usage}
+  ${data.usage}
 
   ## <a name = 'license'></a>
-  ## ${renderLicenseSection(data.licenses[0])}
+  ${renderLicenseSection(data.licenses[0])}
 
   ## <a name = 'contributing'></a>
   ## How to Contribute
-  ## ${data.contributing}
+  ${data.contributing}
 
   ## <a name = 'tests'></a>
   ## Tests
-  ## ${data.test}
+  ${data.test}
 
   ## <a name = 'questions'></a>
   ## Questions
-  ## Links below are to my GitHub profile and email.
-  ## Feel free to contact me with any questions you may have about the application
-  ## GitHub: [${data.gitName}](https://www.github.com/${data.gitName})
-  ## Email: [${data.email}](mailto:${data.email})
+  Links below are to my GitHub profile and email.
+  Feel free to contact me with any questions you may have about the application
+  GitHub: [${data.gitName}](https://www.github.com/${data.gitName})
+  Email: [${data.email}](mailto:${data.email})
 
 
 `;
