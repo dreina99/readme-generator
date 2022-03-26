@@ -36,3 +36,4 @@
   Feel free to contact me with any questions you may have about the application  
   GitHub: [dreina99](https://www.github.com/dreina99)  
   Email: [devinreina99@gmail.com](mailto:devinreina99@gmail.com)
+  Video Walkthrough: https://www.youtube.com/watch?v=CTgdDYSLKWI&ab_channel=DevinReina
