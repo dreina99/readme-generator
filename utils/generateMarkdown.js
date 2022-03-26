@@ -32,10 +32,10 @@ function renderLicenseLink(license) {
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
   if(license === 'None')
-    return `License: None`
+    return `## License: None`
   else {
-    return `License: ${license}
-  ## [${license} Link](${renderLicenseLink(license)})`
+    return `## License: ${license}
+  [${license} Link](${renderLicenseLink(license)})`
   } 
 }
 
@@ -43,45 +43,42 @@ function renderLicenseSection(license) {
 function generateMarkdown(data) {
   console.log(data.licenses[0]);
   return `# ${data.projectName}
-  ## Description
-  ${data.description}
+  ## Description  
+  ${data.description}  
   ${renderLicenseBadge(data.licenses[0])} 
 
   ## Table of Contents
-  ## [Installation](#installation)
-  ## [Usage](#usage)
-  ## [License](#license)
-  ## [Contributing](#contributing)
-  ## [Tests](#tests)
-  ## [Questions](#questions)
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [License](#license)
+  - [Contributing](#contributing)
+  - [Tests](#tests)
+  - [Questions](#questions)
 
-  ## <a name = 'installation'></a>
   ## Installation
   ${data.installation}
 
-  ## <a name = 'usage'></a>
+  
   ## Usage
   ${data.usage}
 
-  ## <a name = 'license'></a>
+  
   ${renderLicenseSection(data.licenses[0])}
 
-  ## <a name = 'contributing'></a>
+  
   ## How to Contribute
   ${data.contributing}
 
-  ## <a name = 'tests'></a>
+  
   ## Tests
   ${data.test}
 
-  ## <a name = 'questions'></a>
+  
   ## Questions
   Links below are to my GitHub profile and email.
-  Feel free to contact me with any questions you may have about the application
-  GitHub: [${data.gitName}](https://www.github.com/${data.gitName})
+  Feel free to contact me with any questions you may have about the application  
+  GitHub: [${data.gitName}](https://www.github.com/${data.gitName})  
   Email: [${data.email}](mailto:${data.email})
-
-
 `;
 }
 
